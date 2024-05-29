@@ -6,8 +6,13 @@ pessoa = {
 'Gênero':'Masculino',
 'Cidade':'Águas Claras'
 }
-pessoa.pop(input('Informe a chave que deseja excluir: '), None)
-# exibe os novos dados na tela
 
+# Se digitar uma chave inválida dá erro na execução
+#del pessoa[input('Informe a chave que deseja excluir: ')]
+
+# Se digitar uma chave inválida NÃO dá erro na execução
+pessoa.pop(input('Informe a chave que deseja excluir: '), None)
+
+# exibe os novos dados na tela
 for chave in pessoa:
     print(f'{chave}: {pessoa.get(chave)}')
