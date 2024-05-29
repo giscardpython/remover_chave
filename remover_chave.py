@@ -8,4 +8,6 @@ pessoa = {
 }
 pessoa.pop(input('Informe a chave que deseja excluir: '), None)
 # exibe os novos dados na tela
-print(pessoa)
+
+for chave in pessoa:
+    print(f'{chave}: {pessoa.get(chave)}')
